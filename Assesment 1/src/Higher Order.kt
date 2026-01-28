@@ -1,10 +1,10 @@
 fun main(args: Array<String>) {
     val x = 10
-    val y = 29
-    val result = add(x,y,ans2)
+    val y = 30
+    val result = add(x,y){x: Int ,y: Int ->x*y}
     print(result)
 }
-val ans2 = {x: Int ,y: Int ->x*y}
+//val ans2 =
 
 fun add(x: Int,y: Int,Operation:(Int, Int)-> Int): Int{
     return Operation(x,y)
